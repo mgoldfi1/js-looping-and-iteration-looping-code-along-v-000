@@ -8,11 +8,14 @@
   }
 
   function tailsNeverFails() {
-    function maybeTrue() {
-      return Math.random() <= 0.5;
-          }
     let x = 0
-      while (maybeTrue()) {
+    let i;
+      while (i === true) {
+        if (Math.random() <= 0.5) {
+           i = true 
+        } else {
+          i = false 
+        }
         x++;
         console.log(`You got ${x} tails in a row!`)
 
