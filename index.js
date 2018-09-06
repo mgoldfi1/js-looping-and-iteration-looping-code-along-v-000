@@ -8,11 +8,13 @@
   }
 
   function tailsNeverFails() {
-    // let flip = Math.random()
-    // let x = 0
-    //   while (flip <= 0.5) {
-    //     x++;
-    //     console.log(`You got ${x} tails in a row!`)
-    //
-    //   }
+    function maybeTrue() {
+      return Math.random() <= 0.5;
+          }
+    let x = 0
+      while (maybeTrue()) {
+        x++;
+        console.log(`You got ${x} tails in a row!`)
+
+      }
   }
