@@ -6,3 +6,7 @@
     }
     return badges
   }
+
+  function tailsNeverFails() {
+
+  }
