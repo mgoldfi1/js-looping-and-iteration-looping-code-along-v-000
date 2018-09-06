@@ -7,13 +7,12 @@
     return badges
   }
 
-  function tailsNeverFails() {
-    let x = 0
-    let i = Math.random()
-      while (i <= 0.5) {
-        i = Math.random();
-        x++;
-        console.log(`You got ${x} tails in a row!`)
+  function tailsNeverFails () {
+    let tails = 0;
 
-      }
+    while (Math.random() >= 0.5) {
+      tails++;
+    }
+
+    return `You got ${tails} tails in a row!`;
   }
