@@ -9,13 +9,9 @@
 
   function tailsNeverFails() {
     let x = 0
-    let i;
-      while (i === true) {
-        if (Math.random() <= 0.5) {
-           i = true
-        } else {
-          i = false
-        }
+    let i = Math.random()
+      while (i <= 0.5) {
+        i = Math.random();
         x++;
         console.log(`You got ${x} tails in a row!`)
 
